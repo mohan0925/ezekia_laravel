@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CandidatesController;
+use App\Http\Controllers\jobController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/uploadcandidates',[CandidatesController::class,'importcandidates']);
+Route::get('/uploadjobs',[jobController::class,'importjobs']);
