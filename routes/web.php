@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CandidatesController;
 use App\Http\Controllers\jobController;
+use App\Http\Controllers\dataListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('/uploadcandidates',[CandidatesController::class,'importcandidates']);
 Route::get('/uploadjobs',[jobController::class,'importjobs']);
+Route::get('/displaydata',[dataListController::class,'displaydata']);
