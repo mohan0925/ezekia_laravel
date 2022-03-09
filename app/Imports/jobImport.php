@@ -28,8 +28,8 @@ class jobImport implements ToModel,WithStartRow
                 'user_id' => $row[1],
                 'jobTittle' => $row[2],
                 'companyName' => $row[3],
-                'startDate' => $row[4],
-                'endDate' => $row[5],
+                'startDate' => date('Y-m-d H:i:s', strtotime($row[4])),
+                'endDate' =>  date('Y-m-d H:i:s', strtotime($row[5]))
         ]);
     }
 }

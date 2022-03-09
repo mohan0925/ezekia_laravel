@@ -16,19 +16,20 @@
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+          @foreach ($data[0] as $value_key => $value_value) 
+            <th>{{ $value_key }}</th>
+          @endforeach
       </tr>
-    </thead>
-    <tbody>
-        @foreach ($data as $singledata) 
-        <tr>
-            <td>{{$singledata->FirstName}}</td>
-            <td>{{$singledata->LastName}}</td>
-            <td>{{$singledata->Email}}</td>
-      </tr>    
-        @endforeach
+        </thead>
+        <tbody>
+          @foreach ($data as $key => $value)
+          <tr>
+            @foreach ($value as $value_value) 
+              <td>{{ $value_value }}</td>
+              @endforeach
+            </tr>    
+          @endforeach
+        
     </tbody>
   </table>
 </div>
