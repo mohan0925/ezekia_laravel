@@ -12,7 +12,7 @@ class Job extends Model
     protected $table = "jobs";
     protected $fillable = ['user_id','jobTittle','companyName','startDate','endDate'];
 
-    public static function getcandidates()
+    public static function getjobs()
     {
         $records = DB::table('jobs')->all();
         return $records;

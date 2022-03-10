@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Ezekia Coding Test</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,8 +11,7 @@
 <body>
 
 <div class="container">
-  <h2>Bordered Table</h2>
-  <p>The .table-bordered class adds borders to a table:</p>            
+  <h2>Candidates Filtered Data</h2>            
   <table class="table table-bordered">
     <thead>
       <tr>

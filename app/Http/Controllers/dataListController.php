@@ -18,6 +18,7 @@ class dataListController extends Controller
         ->orderBy('jobs.user_id', 'ASC')
         ->orderBy('jobs.endDate', 'DESC')
         ->get();
+
         return view('displayInfo',['data'=>$candidates]);
     }
 }
